@@ -15,6 +15,18 @@
       "label": "Lint (Ruff)",
       "type": "shell",
       "command": "ruff check src tests --fix"
+    },
+    {
+      "label": "Run Streamlit",
+      "type": "shell",
+      "command": ".\\.venv\\Scripts\\python.exe -m streamlit run src\\app\\streamlit_app.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}\\src"
+      },
+      "problemMatcher": []
     }
   ]
 }
