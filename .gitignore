@@ -1,0 +1,33 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+# Virtual envs
+.venv/
+.conda/
+.env
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & models
+data/
+models/
+
+# VS Code
+.vscode/*.code-workspace
+!.vscode/settings.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+htmlcov/
+.coverage

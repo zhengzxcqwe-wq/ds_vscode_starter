@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "ds-vscode-starter"
+version = "0.1.0"
+description = "Production-grade DS/ML starter for VS Code"
+authors = ["You <you@example.com>"]
+readme = "README.md"
+packages = [{include = "app", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+plotly = "*"
+seaborn = "*"
+scikit-learn = "*"
+xgboost = "*"
+lightgbm = "*"
+ipykernel = "*"
+ipywidgets = "*"
+mypy = "*"
+pytest = "*"
+streamlit = "*"
+pydantic = ">=2"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+isort = "*"
+ruff = "*"
+pre-commit = "*"
+pytest-cov = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
+lint.select = ["E","F","I","W","Q","UP","B","C4"]
+lint.ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.mypy]
+python_version = "3.10"
+strict = false
+ignore_missing_imports = true

@@ -1,0 +1,25 @@
+name: ds310
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - plotly
+  - seaborn
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - ipykernel
+  - ipywidgets
+  - mypy
+  - pytest
+  - pip:
+    - black
+    - isort
+    - ruff
+    - pre-commit
+    - streamlit
+    - pydantic>=2
